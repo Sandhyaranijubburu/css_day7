@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+         background-color: blue;
+      }
+     .container{
+        display:grid;
+        margin:20px;
+        padding:5%;
+        gap:10px;
+        height: 60vh;
+        grid-template-columns: auto auto auto auto;
+     }
+     .container div{
+        display: grid;
+        align-content: center;
+     }
+     .item1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;  
+        grid-row-end:3 ;  
+        background-color: rgb(244, 239, 240);
+     }
+     .item2{
+        grid-column-start: 2;
+        grid-column-end:  3;
+        background-color: rgb(247, 243, 244);
+     }
+     .item3{
+        grid-column-start:3;
+        grid-column-end:5;
+        background-color: rgb(238, 236, 236);
+     }
+     .item4{
+        grid-column-start: 2;
+        grid-column-end:  3;
+        background-color: rgb(247, 243, 244);
+     }
+     .item5{
+        grid-column-start:3;
+        grid-column-end: 4;
+        grid-row-start:2 ;  
+        grid-row-end:4 ;  
+        background-color: rgb(244, 239, 240);
+     }
+     .item6{
+        grid-column-start: 1;
+        grid-column-end:2 ;
+        background-color: rgb(247, 243, 244);
+     }
+     .item7{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: rgb(247, 243, 244);
+     }
+     .item8{
+        grid-column-start:2;
+        grid-column-end:3 ;
+        grid-row-start: 3;  
+        grid-row-end:5 ;  
+        background-color: rgb(244, 239, 240);
+     }
+     .item9{
+        grid-column-start: 4;
+        grid-column-end:  5;
+        grid-row-start:2;
+        background-color: rgb(247, 243, 244);
+     }
+     .item10{
+        grid-column-start:4 ;
+        grid-column-end: 5;
+        grid-row-start:3;
+        background-color: rgb(247, 243, 244);
+     } 
+     .item11{
+        grid-column-start:3;
+        grid-column-end:5 ;
+        background-color: rgb(244, 239, 240);
+     }
+     :root{
+      --color:rgb(10, 10, 146);
+     }
+     p{
+      color:var(--color);
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item1"><center><p>Masonry I</div>
+    <div class="item2"><center><p>Responsive</center></div>
+    <div class="item3"><center><p>Overlap</center></div>
+    <div class="item4"><center><p>Fluid</center></div>
+    <div class="item5"><center><p>Explicitly Placed</center></div>
+    <div class="item6"><center><p>Flexible Breadth</center></div>
+    <div class="item7"><center><p>DOM Operator</center></div>
+    <div class="item8"><center><p>Masonry II</center></div>
+    <div class="item9"><center><p>Negative Space</center></div>
+    <div class="item10"><center><p>Masonry III</center></div>
+    <div class="item11"><center><p>Named tracks</center></div>
+</div>
+</body>
+</html>
